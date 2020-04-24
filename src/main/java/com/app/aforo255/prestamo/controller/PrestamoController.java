@@ -16,7 +16,7 @@ public class PrestamoController {
 	@Autowired
 	private IPrestamoService service;	
 	
-	@GetMapping("prestamolistar")
+	@GetMapping("/prestamolistar")
 	public List<Prestamo> listar(){		
 		return (List<Prestamo>) service.findAll();
 	}
